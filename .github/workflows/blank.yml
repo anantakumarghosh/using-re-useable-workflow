@@ -1,0 +1,13 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+jobs:
+  call-workflow-1-in-local-repo:
+    uses: anantakumarghosh/re-usable-workflow/.github/workflows/re-useable-workflow.yml@a600dee4a8058ac8958ee3099038d01966a15bbe
